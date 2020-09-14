@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="0dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="381dp"
+            android:layout_height="79dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteY="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/profile_001"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/profile_002"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/profile_003"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/profile_004"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/profile_006"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image5"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/logohome"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/welcome_back"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/what_brings_you_here_today"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ScrollView
+        android:layout_width="365dp"
+        android:layout_height="346dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="5"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-16dp">
+
+            <LinearLayout
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="20"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/icon_sports" />
+
+                <Button
+                    android:id="@+id/sportsBtn"
+                    android:layout_width="235dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="19"
+                    android:background="@android:color/white"
+                    android:text="@string/sports"
+                    android:textAlignment="textStart" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/second"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="20"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/icon_hobbies" />
+
+                <Button
+                    android:id="@+id/hobbiesBtn"
+                    android:layout_width="235dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="19"
+                    android:background="@android:color/white"
+                    android:text="@string/hobbies"
+                    android:textAlignment="textStart" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/third"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="20"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/icon_food" />
+
+                <Button
+                    android:id="@+id/foodBtn"
+                    android:layout_width="235dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="19"
+                    android:background="@android:color/white"
+                    android:text="@string/food"
+                    android:textAlignment="textStart" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fourth"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="20"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/icon_dating" />
+
+                <Button
+                    android:id="@+id/datingBtn"
+                    android:layout_width="235dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="19"
+                    android:background="@android:color/white"
+                    android:text="@string/dating"
+                    android:textAlignment="textStart" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/home_icon" />
+        <ImageButton
+            android:id="@+id/messages"
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/messages_icon" />
+        <ImageButton
+            android:id="@+id/feed"
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/feed_icon" />
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/profile_icon" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

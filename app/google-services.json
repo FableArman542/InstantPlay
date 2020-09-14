@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "277619814055",
+    "firebase_url": "https://instantplay-f8f63.firebaseio.com",
+    "project_id": "instantplay-f8f63",
+    "storage_bucket": "instantplay-f8f63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277619814055:android:8fa493768bf1b44db53582",
+        "android_client_info": {
+          "package_name": "code.dam_45414.instantplay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277619814055-cd9pq6i4hgfj267a0rgvo6pjh8c2a00k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "code.dam_45414.instantplay",
+            "certificate_hash": "92f44656e643d8db1651459097f4e4a870a21a1a"
+          }
+        },
+        {
+          "client_id": "277619814055-qinvt461e8dbp8cv3sud6fjff15rgrfe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ3JtWMaSMLzLjrw2s7e_-6Qp6goOF1kA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "277619814055-qinvt461e8dbp8cv3sud6fjff15rgrfe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

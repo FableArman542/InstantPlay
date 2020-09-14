@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HomeFragment"
+    android:id="@+id/fragment_home">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".WelcomeActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/windowBackground">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="-40dp"
+                        android:src="@drawable/logo" />
+
+                    <ImageButton
+                        android:id="@+id/inboxbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:src="@drawable/ic_inbox" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="0dp"
+            android:layout_height="82dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:scrollbars="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bar">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="@string/welcome_back"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/what_brings_you_here_today"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <ScrollView
+            android:layout_width="365dp"
+            android:layout_height="346dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="5"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="-16dp">
+
+                <LinearLayout
+                    android:id="@+id/first"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="20"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_sports" />
+
+                    <Button
+                        android:id="@+id/sportsBtn"
+                        android:layout_width="235dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="19"
+                        android:background="@null"
+                        android:text="@string/sports"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/second"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="20"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_hobbies" />
+
+                    <Button
+                        android:id="@+id/hobbiesBtn"
+                        android:layout_width="235dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="19"
+                        android:background="@null"
+                        android:text="@string/hobbies"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/third"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="20"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_food" />
+
+                    <Button
+                        android:id="@+id/foodBtn"
+                        android:layout_width="235dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="19"
+                        android:background="@null"
+                        android:text="@string/food"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fourth"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="20"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_dating" />
+
+                    <Button
+                        android:id="@+id/datingBtn"
+                        android:layout_width="235dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="19"
+                        android:background="@null"
+                        android:text="@string/dating"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

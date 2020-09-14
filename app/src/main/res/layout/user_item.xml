@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/image_profile"
+        android:src="@mipmap/ic_launcher"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/image_profile"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:text="@string/username"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fullname"
+            android:text="@string/full_name"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/btn_follow"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/btn_text"
+            android:text="@string/text"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/emailTxt"
+        android:layout_width="350dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="70dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/RegisterBtn"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:textColor="#FFFFFF"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTxt"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowRadius="5"/>
+
+    <EditText
+        android:id="@+id/passwordTxt"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/emailTxt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emailTxt"
+        app:layout_constraintTop_toBottomOf="@+id/emailTxt"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/loginHereTxt"
+        android:layout_width="236dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/don_t_have_an_account_register_here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterBtn" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

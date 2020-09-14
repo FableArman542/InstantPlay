@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HelpFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentTop="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/backbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_back"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/backbtn"
+                    android:text="@string/help"
+                    android:layout_marginEnd="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bar"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/posts"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/if_you_want_to_post_a_picture_together_with_a_description_just_hit_the_plus_button_at_the_bottom_center_of_the_screen"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/announces"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/at_the_homepage_access_one_of_the_categories_sports_hobbies_etc_and_check_or_create_an_announce"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/messages"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/if_you_want_to_message_someone_at_the_homepage_select_the_messages_icon_at_the_right_side_upwords"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

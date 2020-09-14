@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username">Nome de Utilizador</string>
+    <string name="send">Enviar</string>
+    <string name="message_here">Mensagem aqui</string>
+    <string name="backbutton">BackButton</string>
+    <string name="category">Categoria</string>
+    <string name="create">Criar</string>
+    <string name="write_a_title_here">Escreva o título aqui</string>
+    <string name="post">Postar</string>
+    <string name="update">Atualizar</string>
+    <string name="bio">Bio</string>
+    <string name="login">Entrar</string>
+    <string name="password">Palavra-passe</string>
+    <string name="don_t_have_an_account_register_here">Não tem uma conta? Regista-te aqui (:</string>
+    <string name="bio_here">bio here</string>
+    <string name="birthday">Aniversário</string>
+    <string name="email">E-mail</string>
+    <string name="register">Registar</string>
+    <string name="already_have_an_account_login_here">Já tem uma conta? Entre aqui (:</string>
+    <string name="instantplay">InstantPlay</string>
+    <string name="name">Nome</string>
+    <string name="title">Título</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="food">Refeições</string>
+    <string name="dating">Relações</string>
+    <string name="sports">Desporto</string>
+    <string name="welcome_back">Bem vindo de volta</string>
+    <string name="what_brings_you_here_today">O que lhe trás de volta?</string>
+    <string name="your_messages">A sua mensagem</string>
+    <string name="lisbon_portugal">Lisbon, Portugal</string>
+    <string name="gerard_way">𝑰𝒏 𝒐𝒕𝒉𝒆𝒓 𝒘𝒐𝒓𝒅𝒔, 𝒌𝒆𝒆𝒑 𝒚𝒐𝒖𝒓 𝒃𝒂𝒅 𝒗𝒊𝒃𝒆𝒔 𝒐𝒖𝒕 𝒐𝒇 𝒎𝒚 𝒄𝒐𝒓𝒏𝒇𝒍𝒂𝒌𝒆𝒔 ~ Gerard Way</string>
+    <string name="search_users">Procure Utilizadores...</string>
+    <string name="arman">Arman</string>
+    <string name="_15_08_1999">15/08/1999</string>
+    <string name="profile_visibility">Visibilidade de Perfil</string>
+    <string name="language">Idioma</string>
+    <string name="get_premium_features">Ganhe Funcionalidades Premium</string>
+    <string name="enjoyed_it_consider_donating">Gostou? Considere Doar</string>
+    <string name="date">data</string>
+    <string name="mike">Mike</string>
+    <string name="description">Descrição</string>
+    <string name="text">Texto</string>
+    <string name="full_name">Nome Completo</string>
+    <string name="help">Ajuda</string>
+    <string name="about">Sobre</string>
+    <string name="posts">Posts</string>
+    <string name="messages">Mensagens</string>
+    <string name="if_you_want_to_post_a_picture_together_with_a_description_just_hit_the_plus_button_at_the_bottom_center_of_the_screen">Se você quiser postar uma foto junto com uma descrição, basta clicar no botão de adição na parte inferior central da tela.</string>
+    <string name="at_the_homepage_access_one_of_the_categories_sports_hobbies_etc_and_check_or_create_an_announce">Na página inicial, acesse uma das categorias (esportes, hobbies, etc.) e marque ou crie um anúncio.</string>
+    <string name="if_you_want_to_message_someone_at_the_homepage_select_the_messages_icon_at_the_right_side_upwords">Se você quiser enviar uma mensagem para alguém, na página inicial, selecione o ícone de mensagens no upwords do lado direito.</string>
+    <string name="announces">Anúncios</string>
+
+</resources>
