@@ -1,5 +1,6 @@
 package code.dam_45414.instantplay.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -25,6 +26,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import code.dam_45414.instantplay.MainActivity;
 import code.dam_45414.instantplay.Model.User;
 import code.dam_45414.instantplay.R;
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -55,7 +57,7 @@ public class SettingsFragment extends Fragment {
 
     FirebaseUser firebaseUser;
 
-    Button about, help;
+    Button about, help, logout;
 
     public SettingsFragment() {
         // Required empty public constructorx
@@ -125,6 +127,22 @@ public class SettingsFragment extends Fragment {
                         .addToBackStack(null)
                         .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                         .commit();
+            }
+        });
+
+        final FirebaseAuth auth = FirebaseAuth.getInstance();
+        logout = view.findViewById(R.id.logout);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(getContext(), MainActivity.class);
+                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); // To clean up all activities
+                startActivity( i);
+                FirebaseAuth.getInstance().signOut();
+
+
+
+                getActivity().finish();
             }
         });
 

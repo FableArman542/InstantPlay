@@ -120,8 +120,13 @@
             <Button
                 android:id="@+id/help"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/help" />
+                android:layout_height="40dp"
+                android:text="@string/help"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowRadius="5"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_vertical" />
 
         </LinearLayout>
 
@@ -133,8 +138,13 @@
             <Button
                 android:id="@+id/about"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/about" />
+                android:layout_height="40dp"
+                android:text="@string/about"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowRadius="5"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_vertical" />
 
         </LinearLayout>
 
@@ -147,10 +157,16 @@
             <Button
                 android:id="@+id/getPremium"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="40dp"
                 android:layout_weight="2"
-                android:background="@color/storyplaceholder_background"
-                android:text="@string/get_premium_features" />
+                android:text="@string/get_premium_features"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/premiumshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:textColor="#FFFFFF"/>
 
         </LinearLayout>
 
@@ -163,9 +179,33 @@
             <Button
                 android:id="@+id/donate"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="40dp"
                 android:layout_weight="2"
-                android:text="@string/enjoyed_it_consider_donating" />
+                android:text="@string/enjoyed_it_consider_donating"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowRadius="5"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:text="Logout"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowRadius="5" />
 
         </LinearLayout>
 

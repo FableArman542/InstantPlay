@@ -1,6 +1,7 @@
 package code.dam_45414.instantplay;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
@@ -64,7 +65,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
         mAuth = FirebaseAuth.getInstance();
-
+        if (mAuth.getCurrentUser() != null) {
+            ProgressDialog progressDialog = new ProgressDialog(this);
+            progressDialog.setMessage("...");
+            progressDialog.show();
+            Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            progressDialog.dismiss();
+            startActivity(intent);
+            finish();
+        }
     }
 
     @Override

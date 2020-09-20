@@ -2,6 +2,7 @@ package code.dam_45414.instantplay.Adapter;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +28,7 @@ public class ProfilePostsAdapter extends RecyclerView.Adapter<ProfilePostsAdapte
 
     private Context mContext;
     private List<Post> mUsers;
+    private MediaPlayer mp;
 
     public ProfilePostsAdapter(Context mContext, List<Post> mUsers) {
         this.mContext = mContext;
@@ -61,6 +63,21 @@ public class ProfilePostsAdapter extends RecyclerView.Adapter<ProfilePostsAdapte
                 reference.setValue(!post.getVisible());
                 viewHolder.image.setBorderColor(color);
                 Toast.makeText(mContext, t, Toast.LENGTH_SHORT).show();
+
+                mp = MediaPlayer.create(mContext, R.raw.bubble);
+                mp.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                    @Override
+                    public void onPrepared(MediaPlayer mediaPlayer) {
+                        mp.start();
+                    }
+                });
+
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mediaPlayer) {
+                        mp.release();
+                    }
+                });
 
                 Animation animShake = AnimationUtils.loadAnimation(mContext, R.anim.shake);
                 viewHolder.image.startAnimation(animShake);
