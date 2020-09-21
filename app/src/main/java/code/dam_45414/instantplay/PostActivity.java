@@ -75,7 +75,7 @@ public class PostActivity extends AppCompatActivity {
 
     private void uploadImage () {
         final ProgressDialog progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage("Logging in");
+        progressDialog.setMessage("Uploading");
         progressDialog.show();
 
         if (imageUri != null) {
