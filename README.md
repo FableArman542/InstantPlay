@@ -1,6 +1,6 @@
 # InstantPlay
 <b>Projeto final da Unidade Curricular de DAM (Desenvolvimento de Aplicações Móveis)</b>
-<small>Engenharia Informática e Multimédia - ISEL</small>
+<p>Engenharia Informática e Multimédia - ISEL</p>
 
 <br />
 <p>O presente projeto pretende o completo desenvolvimento de uma aplicação móvel, para sistemas android.
